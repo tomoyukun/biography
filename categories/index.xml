@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | TOMOYUKI SUZUKI</title>
-    <link>https://tomoyukun.github.io/biography/categories/</link>
-      <atom:link href="https://tomoyukun.github.io/biography/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://tomoyukun.github.io/categories/</link>
+      <atom:link href="https://tomoyukun.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>tomoyukun1101@gmail.com</copyright>
     <image>
-      <url>https://tomoyukun.github.io/biography/images/icon_hu7bd72f0a6001955b2f9227cb8f07590b_719150_512x512_fill_lanczos_center_2.png</url>
+      <url>https://tomoyukun.github.io/images/icon_hu7bd72f0a6001955b2f9227cb8f07590b_719150_512x512_fill_lanczos_center_2.png</url>
       <title>Categories</title>
-      <link>https://tomoyukun.github.io/biography/categories/</link>
+      <link>https://tomoyukun.github.io/categories/</link>
     </image>
     
   </channel>
