@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | TOMOYUKI SUZUKI</title>
-    <link>https://tomoyukun.github.io/authors/</link>
-      <atom:link href="https://tomoyukun.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://tomoyukun.github.io/biography/authors/</link>
+      <atom:link href="https://tomoyukun.github.io/biography/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>tomoyukun1101@gmail.com</copyright>
     <image>
-      <url>https://tomoyukun.github.io/images/icon_hu7bd72f0a6001955b2f9227cb8f07590b_719150_512x512_fill_lanczos_center_2.png</url>
+      <url>https://tomoyukun.github.io/biography/images/icon_hu7bd72f0a6001955b2f9227cb8f07590b_719150_512x512_fill_lanczos_center_2.png</url>
       <title>Authors</title>
-      <link>https://tomoyukun.github.io/authors/</link>
+      <link>https://tomoyukun.github.io/biography/authors/</link>
     </image>
     
     <item>
       <title></title>
-      <link>https://tomoyukun.github.io/authors/admin/</link>
+      <link>https://tomoyukun.github.io/biography/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tomoyukun.github.io/authors/admin/</guid>
+      <guid>https://tomoyukun.github.io/biography/authors/admin/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
 &lt;p&gt;I&#39;m a Research Engineer at AI System Dept. in DeNA. &lt;br&gt;
 I engage myself in Research and Development on Computer Vision and Machine Learning. If you see this biography and get interested in me, please contact me. &lt;br&gt;&lt;/p&gt;
