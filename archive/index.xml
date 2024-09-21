@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TOMOYUKI SUZUKI</title>
-    <link>https://tomoyukun.github.io/biography/</link>
-      <atom:link href="https://tomoyukun.github.io/biography/index.xml" rel="self" type="application/rss+xml" />
-    <description>TOMOYUKI SUZUKI</description>
+    <title>Archives | TOMOYUKI SUZUKI</title>
+    <link>https://tomoyukun.github.io/biography/archive/</link>
+      <atom:link href="https://tomoyukun.github.io/biography/archive/index.xml" rel="self" type="application/rss+xml" />
+    <description>Archives</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>tomoyukun1101@gmail.com</copyright>
     <image>
       <url>https://tomoyukun.github.io/biography/images/icon_hu409f9d1838f7106179d31bb5130dfe5d_326015_512x512_fill_lanczos_center_2.png</url>
-      <title>TOMOYUKI SUZUKI</title>
-      <link>https://tomoyukun.github.io/biography/</link>
+      <title>Archives</title>
+      <link>https://tomoyukun.github.io/biography/archive/</link>
     </image>
     
     <item>
@@ -20,14 +20,6 @@
       <description>&lt;h2 id=&#34;experience&#34;&gt;&lt;strong&gt;Experience&lt;/strong&gt;&lt;/h2&gt;
 &lt;br&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://tomoyukun.github.io/biography/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tomoyukun.github.io/biography/home/</guid>
-      <description></description>
     </item>
     
   </channel>

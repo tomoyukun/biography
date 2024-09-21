@@ -3,11 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tomoyukun.github.io/biography/archive/experience/</loc>
+  </url>
+  
+  <url>
     <loc>https://tomoyukun.github.io/biography/authors/admin/</loc>
   </url>
   
   <url>
     <loc>https://tomoyukun.github.io/biography/home/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tomoyukun.github.io/biography/archive/</loc>
   </url>
   
   <url>
