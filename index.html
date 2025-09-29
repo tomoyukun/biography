@@ -209,6 +209,42 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNF5L34MGV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-VNF5L34MGV', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -319,11 +355,6 @@
     
 
     
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
@@ -337,64 +368,6 @@
 
       
       <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="https://tomoyukun.github.io/biography/#publications" data-target="#publications"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="https://tomoyukun.github.io/biography/#contact" data-target="#contact"><span>Contact</span></a>
-        </li>
-
-        
         
 
       
@@ -751,7 +724,7 @@
         
         <h3>
           <a href="https://www.cyberagent.co.jp/en/" target="_blank" rel="noopener">
-          <span>at CyberAgent</span>
+          <span>CyberAgent</span>
           </a>
         </h3>
         
@@ -835,7 +808,7 @@
           
         
         <li>
-          <a href="https://tomoyukun.github.io/biography/files/tomoyuki_suzuki_cv.pdf" >
+          <a href="https://drive.google.com/file/d/18srQmKA9YQmEePj1U7F4QPCUVNJOfRl7/view?usp=sharing" target="_blank" rel="noopener">
             <i class="ai ai-cv big-icon"></i>
           </a>
         </li>
@@ -850,10 +823,10 @@
     
 
     <p>Tomoyuki Suzuki is an Applied Research Scientist at <a href="https://www.cyberagent.co.jp/en/">CyberAgent</a>.<br>
-His current research interest is computer vision for creative work, including video/image decomposition and representation learning for creative content.</p>
-<p>He is also pursuing his Ph.D. at <a href="https://www.keio.ac.jp/en/">Keio University</a> under the supervision of <a href="https://aoki-medialab.jp/">Prof. Yoshimitsu Aoki</a>, where he works on efficient video recognition.</p>
+His current research interest is computer vision for creative work, including video/image decomposition, representation learning, and agentic systems for content creation and editing.</p>
+<p>He received his Ph.D. in March 2025 under the supervision of <a href="https://aoki-medialab.jp/">Prof. Yoshimitsu Aoki</a> working on video recognition.</p>
 <p>Previously, he was a research engineer at <a href="https://dena.com/intl/">DeNA</a>, working on CV/ML R&amp;D in the mobility domain. He also worked as a part-time researcher at <a href="https://www.aist.go.jp/index_en.html">AIST</a>, conducting research on video event anticipation and visual representation learning.</p>
-<p>For more details, please refer to his <a href="files/tomoyuki_suzuki_cv.pdf">CV</a>.</p>
+<p>For more details, please refer to his <a href="https://drive.google.com/file/d/18srQmKA9YQmEePj1U7F4QPCUVNJOfRl7/view?usp=sharing">CV</a>.</p>
 <!-- <span style="color: Gray; ">
 
 _In my free time, I travel around the world with my backpack._
@@ -953,7 +926,13 @@ Especially, video understanding, image/video/multimodal representation learning 
       <h3 id="international-conference">International Conference</h3>
 <ul>
 <li>
-<p><u><strong>Tomoyuki Suzuki</strong></u>*, Kotaro Kikuchi, Kota Yamaguchi, <em>&ldquo;Fast Sprite Decomposition from Animated Graphics&rdquo;</em>, ECCV 2024. (acceptance rate <strong><span style="color: Salmon; ">27.9%</span></strong>) <a href="https://arxiv.org/abs/2408.03923">[Paper]</a> <a href="https://cyberagentailab.github.io/sprite-decompose/">[Project]</a></p>
+<p><u><strong>Tomoyuki Suzuki</strong></u>, Kang-Jun Liu, Naoto Inoue, Kota Yamaguchi, <em>&ldquo;LayerD: Decomposing Raster Graphic Designs into Layers&rdquo;</em>, ICCV 2025. (acceptance rate <strong><span style="color: Salmon; ">24%</span></strong>) <a href="">[Paper]</a> <a href="https://cyberagentailab.github.io/LayerD/">[Project]</a></p>
+</li>
+<li>
+<p>Takahiro Shirakawa, <u><strong>Tomoyuki Suzuki</strong></u>, Daichi Haraguchi, <em>&ldquo;MG-Gen: Single Image to Motion Graphics Generation&rdquo;</em>, ICCV Workshops 2025. <a href="https://arxiv.org/abs/2504.02361">[Paper]</a> <a href="https://cyberagentailab.github.io/mggen/">[Project]</a></p>
+</li>
+<li>
+<p><u><strong>Tomoyuki Suzuki</strong></u>, Kotaro Kikuchi, Kota Yamaguchi, <em>&ldquo;Fast Sprite Decomposition from Animated Graphics&rdquo;</em>, ECCV 2024. (acceptance rate <strong><span style="color: Salmon; ">27.9%</span></strong>) <a href="https://arxiv.org/abs/2408.03923">[Paper]</a> <a href="https://cyberagentailab.github.io/sprite-decompose/">[Project]</a></p>
 </li>
 <li>
 <p>Shoko Sawada, <u><strong>Tomoyuki Suzuki</strong></u>, Kota Yamaguchi, Masashi Toyoda, <em>&ldquo;Visual Explanation for Advertising Creative Workflow&rdquo;</em>, CHI EA 2024. (acceptance rate <span style="color: black; ">33.9%</span>) <a href="https://dl.acm.org/doi/abs/10.1145/3613905.3651123">[Paper]</a></p>
@@ -963,13 +942,13 @@ Especially, video understanding, image/video/multimodal representation learning 
 </li>
 <li>
 <p><u><strong>Tomoyuki Suzuki</strong></u>, Takahiro Itazuri, Kensho Hara, Hirokatsu Kataoka, <em>&ldquo;Learning Spatiotemporal 3D Convolution
-with Video Order Self-Supervision&rdquo;</em>, IEEE ECCV Workshop on Person In Context, 2018. <a href="http://openaccess.thecvf.com/content_ECCVW_2018/papers/11130/Suzuki_Learning_Spatiotemporal_3D_Convolution_with_Video_Order_Self-Supervision_ECCVW_2018_paper.pdf">[Paper]</a></p>
+with Video Order Self-Supervision&rdquo;</em>, ECCV Workshops 2018. <a href="http://openaccess.thecvf.com/content_ECCVW_2018/papers/11130/Suzuki_Learning_Spatiotemporal_3D_Convolution_with_Video_Order_Self-Supervision_ECCVW_2018_paper.pdf">[Paper]</a></p>
 </li>
 <li>
-<p><u><strong>Tomoyuki Suzuki</strong></u>, Munetaka Minoguchi, Ryota Suzuki, Akio Nakamura, Kenji Iwata, Yutaka Satoh, Hirokatsu Kataoka, <em>&ldquo;Semantic Change Detection&rdquo;</em>, IEEE ICARCV, 2018.</p>
+<p><u><strong>Tomoyuki Suzuki</strong></u>, Munetaka Minoguchi, Ryota Suzuki, Akio Nakamura, Kenji Iwata, Yutaka Satoh, Hirokatsu Kataoka, <em>&ldquo;Semantic Change Detection&rdquo;</em>, ICARCV, 2018.</p>
 </li>
 <li>
-<p>Kaori Abe, Munetaka Minoguchi, Teppei Suzuki, <u><strong>Tomoyuki Suzuki</strong></u>, Naofumi Akimoto, Yue Qiu, Ryota Suzuki, Kenji Iwata, Yutaka Satoh, Hirokatsu Kataoka, <em>&ldquo;Fashion Culture Database: Construction of Database for World-wide Fashion Analysis&rdquo;</em>, IEEE ICARCV 2018.</p>
+<p>Kaori Abe, Munetaka Minoguchi, Teppei Suzuki, <u><strong>Tomoyuki Suzuki</strong></u>, Naofumi Akimoto, Yue Qiu, Ryota Suzuki, Kenji Iwata, Yutaka Satoh, Hirokatsu Kataoka, <em>&ldquo;Fashion Culture Database: Construction of Database for World-wide Fashion Analysis&rdquo;</em>, ICARCV 2018.</p>
 </li>
 </ul>
 <h3 id="journals">Journals</h3>

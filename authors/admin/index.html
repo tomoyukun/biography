@@ -209,6 +209,42 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNF5L34MGV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-VNF5L34MGV', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -311,11 +347,6 @@
     
 
     
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
@@ -329,64 +360,6 @@
 
       
       <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="https://tomoyukun.github.io/biography/#publications"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="https://tomoyukun.github.io/biography/#contact"><span>Contact</span></a>
-        </li>
-
-        
         
 
       
@@ -449,7 +422,7 @@
         
         <h3>
           <a href="https://www.cyberagent.co.jp/en/" target="_blank" rel="noopener">
-          <span>at CyberAgent</span>
+          <span>CyberAgent</span>
           </a>
         </h3>
         
@@ -533,7 +506,7 @@
           
         
         <li>
-          <a href="https://tomoyukun.github.io/biography/files/tomoyuki_suzuki_cv.pdf" >
+          <a href="https://drive.google.com/file/d/18srQmKA9YQmEePj1U7F4QPCUVNJOfRl7/view?usp=sharing" target="_blank" rel="noopener">
             <i class="ai ai-cv big-icon"></i>
           </a>
         </li>
@@ -548,10 +521,10 @@
     
 
     <p>Tomoyuki Suzuki is an Applied Research Scientist at <a href="https://www.cyberagent.co.jp/en/">CyberAgent</a>.<br>
-His current research interest is computer vision for creative work, including video/image decomposition and representation learning for creative content.</p>
-<p>He is also pursuing his Ph.D. at <a href="https://www.keio.ac.jp/en/">Keio University</a> under the supervision of <a href="https://aoki-medialab.jp/">Prof. Yoshimitsu Aoki</a>, where he works on efficient video recognition.</p>
+His current research interest is computer vision for creative work, including video/image decomposition, representation learning, and agentic systems for content creation and editing.</p>
+<p>He received his Ph.D. in March 2025 under the supervision of <a href="https://aoki-medialab.jp/">Prof. Yoshimitsu Aoki</a> working on video recognition.</p>
 <p>Previously, he was a research engineer at <a href="https://dena.com/intl/">DeNA</a>, working on CV/ML R&amp;D in the mobility domain. He also worked as a part-time researcher at <a href="https://www.aist.go.jp/index_en.html">AIST</a>, conducting research on video event anticipation and visual representation learning.</p>
-<p>For more details, please refer to his <a href="files/tomoyuki_suzuki_cv.pdf">CV</a>.</p>
+<p>For more details, please refer to his <a href="https://drive.google.com/file/d/18srQmKA9YQmEePj1U7F4QPCUVNJOfRl7/view?usp=sharing">CV</a>.</p>
 <!-- <span style="color: Gray; ">
 
 _In my free time, I travel around the world with my backpack._
